@@ -5,17 +5,15 @@ if (typeof window !== "undefined") {
   param = searchParams.get("type")
 }
 
-let plant_type = ["Fern", "Non-woody", "Woody"]
+let plant_type = ["Fern/Fern Ally", "Non-woody (not Fern or Grass)", "Woody", "Grass-like"]
 const type = ["native", "introduced", "native hybrid"]
 const habitat = ["aquatic", "terrestrial", "wetlands"]
 const flower_colour = [
   "blue to purple",
   "green to brown",
-  "orange",
   "pink to red",
   "white",
-  "yellow",
-  "don't know",
+  "yellow to orange"
 ]
 
 const leaf_arrangement = ["alternate", "basal", "opposite", "no leaves"]

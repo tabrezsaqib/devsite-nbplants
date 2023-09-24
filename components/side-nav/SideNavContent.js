@@ -36,7 +36,7 @@ const SideNavContent = ({
   triggerToolTip,
 }) => {
   const router = useRouter()
-  console.log(router.query.type)
+console.log(options,flower_colour, type)
   const optionNames = [
     {
       key: "plant_type",
@@ -154,6 +154,10 @@ const SideNavContent = ({
       label: "white",
     },
     {
+      color: "../../images/oy.png",
+      label: "yellow to orange",
+    },
+    {
       color: "../../images/pr.png",
       label: "pink to red",
     },
@@ -171,7 +175,7 @@ const SideNavContent = ({
   const dispatch = useDispatch()
   const getOption = (key) => {
     const option = options[key].map((data, index) => {
-      console.log("data", data)
+      //console.log("data", data)
       return (
         <div className="form-check" key={index}>
           <input
